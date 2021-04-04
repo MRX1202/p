@@ -344,7 +344,7 @@ def hasil():
     if len(asil) < 1:sys.exit(f"\n{garis}\n{biru}[{putih}*{biru}] {putih}Tidak Ada Hasil Yang Didapat\n")
     else:
         for x in asil:
-            print(x)
+            print("");print(x)
         sys.exit(f"\n{garis}\n{biru}[{putih}*{biru}] {putih}Total CP :{kuning} {len(cps)}\n{biru}[{putih}*{biru}] {putih}Total OK :{hijau} {len(oks)}\n")
 def http(url):
     try:return req.get(f"{url}?access_token={token[0]}")
@@ -360,7 +360,7 @@ def tk_login(url):
 def tk_menu(url):
     ses=http(f"{url}/me").json()
     try:ida=ses["id"];mama=ses["name"]
-    except KeyError:print(f"\n{putih}[{merah}×{putih}] Invalid Acces Token Please Relogin");time.sleep(2);os.remove("token.json");tk_login(url)
+    except KeyError:print(f"\n{putih}[{merah}×{putih}] Invalid Acces Token Please Relogin");time.sleep(2);os.remove("token.json");os.system(f"python {sys.argv[0]}")
     os.system("clear");print(logo);print(garis)
     print(f"{biru}[{putih}*{biru}]{putih} User Name :{hijau} {mama}")
     print(f"{biru}[{putih}*{biru}]{putih} User Ids  :{hijau} {ida}")
