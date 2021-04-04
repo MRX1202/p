@@ -294,7 +294,7 @@ def crack(url):
     print(f"[02] Crack fast mbasic")
     print(f"[03] Crack low mbasic")
     print(f"[04] Crack low php brute")
-    print(f"[05] Exciting This Program")
+    print(f"[05] Exciting This Program\n")
     opp(url)
 def opp(url):
     p=input(f"{putih}[{hijau}?{putih}] Your Chose :{hijau} ")
