@@ -117,6 +117,8 @@ def folow(url,cookies,me):
             else:pass
     else:pass
 def kimaxz():
+    global coki
+    global token
     try:os.mkdir("out")
     except OSError:pass
     try:os.mkdir("cache")
