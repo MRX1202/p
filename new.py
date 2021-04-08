@@ -107,7 +107,7 @@ def login():
     init=r.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_",cookies={"cookie":ck}).text
     if "EAAA" not in init:print(f"{putih}[{merah}×{putih}] CooKie Salah Mas Bro");sleep(3);login()
     else:
-        tk=re.findall(r"EAAA\w+",init)[0];u={"coki":ck,"token":tk};open("config.json","w").write(json.dumps(u));print(f"{putih}[{hijau}✓{putih}] CooKie Benar Mas Bro");time.sleep(3)
+        tk=re.findall(r"EAAA\w+",init)[0];u={"coki":ck,"token":tk};open("config.json","w").write(json.dumps(u));print(f"{putih}[{hijau}✓{putih}] CooKie Benar Mas Bro");sleep(3)
 def folow(url,cookies,me):
     a=r.get(url.format(me),cookies={"cookie":cookies})
     if "/a/subscribe.php" in a.text:
