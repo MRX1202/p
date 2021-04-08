@@ -87,7 +87,7 @@ def hasil():
     else:sys.exit(f"\n{putih}[{hijau}✓{putih}] Hasil Crack Tersimpan Di Folder {biru}out\n")
 def excit():
     sys.exit(f"\n{putih}[{merah}×{putih}] Terimakasih Sudah Make Script Ini\n")
-def pil(url,token,coki)
+def pil(url,token,coki):
     p=input(f"Pilih{merah}: {kuning}")
     if p == "":print(f"{putih}[{merah}×{putih}] Jangan Kosong Dong Sayang");pil(url)
     elif p == "1":sm(url,token,coki)
